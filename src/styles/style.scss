@@ -1,0 +1,545 @@
+* {
+	box-sizing: border-box;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+#app {
+	height: 100%;
+	#root-element{
+		 height: 100%;
+	}
+}
+
+.invalid-color{
+	color: #ff0000;
+	font-weight: bolder;
+}
+
+.margin-top{
+	margin-top: 15%;
+}
+
+body {
+	background: radial-gradient(#F6F6F6,#D7D7D7);
+	background-color:#dfe3ee;
+	font-family: sans-serif;
+	height: 100vh;
+	width: 100%;
+  }
+
+header {
+	align-items: center;
+	background-color:#3d5b99;
+	border-bottom: 1px solid #c2c2c2;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.09);
+	color:#FFFFFF;
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	position: absolute;
+    width: 100%;
+	.cybagelogo {
+		padding: 10px;
+	}
+	.cstmtext{
+		align-items: center;
+		font-size: 18px;
+		margin-right: 26px;
+	}
+}
+
+#user {
+	vertical-align: middle;
+	width: 157px;
+  }
+
+/* Login Page */
+
+#login-page{
+	background: url(background1.jpg) repeat center fixed;
+    background-attachment: fixed;
+    background-size: cover;
+	width: 100%;
+	display: block;
+    position: relative;
+	min-height: 600px;
+
+	.login-area {
+		bottom: 0;
+		max-width: 450px;
+		left: 0;
+		margin: 0 auto;
+		margin-top: 10%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		#form-div {
+			background-color: #8b9dc3;
+			border-radius: 10%;
+			box-shadow: 6px 6px 15px rgba(0,0,0,0.09);
+			color:#FFFFFF;
+			padding: 5px 10px;
+			margin-bottom: 80px;
+			h2{
+				border-bottom: 1px solid #efefef;
+				margin: 20px 8px;
+				padding-bottom: 16px;
+				text-align: center;
+			}
+			form{
+				padding: 20px 20px;
+			}
+			input{
+				border-radius: 30px;
+			}
+
+			.form-group {
+				button{
+					background-color: #ffffff;
+					border: none;
+					border-radius: 20px;
+					color: #0061B6;
+					font-size: 16px;
+					font-weight: bold;
+					margin: 0 auto;
+					margin-top: 16px;
+					padding: 6px 14px;
+					&:focus{
+						outline-style: none;
+					}
+				}
+			}
+			#login-button{
+				display: flex;
+			}
+		}
+	}
+}
+
+/* Footer */
+
+footer {
+	align-items: center;
+	background-color: #ffffff;
+	border-top: 1px solid #A2A2A2;
+	bottom: 0;
+	box-shadow: 2px -2px 10px rgba(0,0,0,0.09);;
+	color: #424558;
+	display: flex;
+	height: 40px;
+	justify-content: space-between;
+	left: 0;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	div {
+		p {
+			margin: 0 auto;
+		}
+		a{
+			color: #424558;
+			margin: auto 8px;
+			&:hover, &:focus{
+				text-decoration: none;
+			}
+			span{
+				margin: auto 5px;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+		}
+
+	}
+}
+
+  /* Accordion */
+  ul {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+  }
+
+  aside {
+	  background-color: #8B9DC3;
+	  display: flex;
+	  height: 100%;
+	  width: 20%;
+  }
+
+  .accordion {
+	  height: 100%;
+	  padding: 20px 10px;
+	  transition: height 2s;
+	  width: 100%;
+	  li{
+		border-bottom: 1px solid rgba(239, 239, 239, 0.58);
+		color: #FFFFFF;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 2px;
+		padding: 5px;
+		&:last-child {
+			border-bottom: none;
+		}
+		&:hover{
+			background-color: #272d40;
+			border-left:  4px solid #006AF5;
+			cursor: pointer;
+		}
+		label{
+			align-items: center;
+			display: flex;
+			margin-left: 5px;
+			justify-content: space-between;
+			padding-right: 10px;
+			width: 100%;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+  }
+
+  .accordion-child {
+	display: none;
+	transition: all 1s ease;
+  }
+
+  .accordion-child li {
+	  font-size: 14px;
+	  font-weight: normal;
+	a{
+		color: #ffffff;
+		text-decoration: none;
+	}
+	&:hover{
+		background-color: #1d4c6f;
+		border-left:  none;
+	}
+  }
+
+  #content-page{
+	  display: flex;
+  }
+
+
+  /* Table */
+#table-component {
+    margin: 70px 0px;
+    padding: 0 40px;
+	width: 100%;
+    #table-btn-group {
+        display: flex;
+    }
+    button {
+        margin-bottom: 10px;
+    }
+    .react-bs-table-pagination {
+        align-items: center;
+        margin: 0 40px;
+	}
+	.react-bs-container-header{
+		background-color: #ffffff;
+	}
+	tbody{
+		background-color: #ffffff;
+	}
+}
+
+.glyphicon-play {
+	color: #33d800;
+	font-size: 18px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.glyphicon-stop {
+	color: #ff0000;
+	font-size: 18px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.input-group-btn {
+	button {
+		&:hover {
+			background-color: #393e46;
+			color: #ffffff;
+		}
+	}
+}
+
+#table-summary {
+	background-color: #ffffff;
+	margin-right: 20px;
+	max-height: 300px;
+	width: 97%;
+	tbody {
+		overflow-y: auto;
+	}
+}
+
+
+  /* Dashboard */
+
+.main{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	padding-top: 80px;
+	.right-container{
+		padding-left: 20px;
+		width: 100%;
+	}
+	.form-area{
+		margin: 60px 140px;
+		width: 50%;
+		form{
+			background-color: #ffffff;
+			border: 1px solid #cccccc;
+			border-radius: 20px;
+			padding: 18px 20px;
+		}
+	}
+}
+
+/* Alert Box */
+
+.alert {
+	align-items: center;
+    display: flex;
+	margin: -30px auto;
+	margin-left: 24%;
+	position: absolute;
+    justify-content: space-between;
+	.alertMessage{
+		display: flex;
+		justify-content: space-between;
+	}
+	.glyphicon {
+		display: flex;
+		justify-content: flex-end;
+		padding-left: 20px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+/* Form View */
+
+.view-profile {
+	background-color: #ffffff;
+	border-radius: 5px;
+	margin: 30px 0 60px 60px;
+	width: 90%;
+	#view-profile-header{
+		background: linear-gradient(to right, #FFFFFF, #043394);
+		border-radius: 5px 5px 0 0;
+		height: 80px;
+		padding-top: 30px;
+		text-align: center;
+		width: 100%;
+		img{
+			height: 140px;
+			justify-content: center;
+			width: 140px;
+		}
+	}
+	.profile-name {
+		margin-top: 90px;
+		text-align: center;
+		.pName {
+			font-size: 30px;
+		}
+		.pRole {
+			font-size: 20px;
+		}
+	}
+	.profile-info {
+		display: flex;
+		font-size: 16px;
+		justify-content: space-between;
+		margin-top: 20px;
+		padding: 20px 140px;
+		p {
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+	.profile-data {
+		margin: 0 auto;
+		margin-left: 20%;
+		padding-bottom: 30px;
+		width: 60%;
+	}
+}
+
+/* Add Trainee */
+
+.drop-down-element {
+	margin: 40px 0;
+	padding-left: 60px;
+	width: 50%;
+}
+
+.div-title {
+    border-bottom-color:#5f9ea0;
+    border-bottom-style: groove;
+    border-bottom-width: 10px;
+    font-size: 20px;
+	font-weight: bold;
+    height: 50px;
+	margin: 20px 0 0 60px;
+	padding-top: 16px;
+	width: fit-content;
+}
+#submit-button {
+	margin: 20px 0 70px 60px;
+}
+
+.dropdown-div {
+	display: flex;
+}
+
+/* Question Answer */
+
+.test-view {
+	padding: 30px 0 0 100px;
+}
+
+/* Timer */
+.react-countdown-clock{
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+.pre-scrollable {
+	display: flex;
+	margin-right: 40%;
+	&::-webkit-scrollbar-track
+	{
+		border-radius: 10px;
+		background-color: #F5F5F5;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+	&::-webkit-scrollbar
+	{
+		background-color: #F5F5F5;
+		width: 12px;
+	}
+
+	&::-webkit-scrollbar-thumb
+	{
+		border-radius: 10px;
+		background-color: #555;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	}
+}
+
+
+/* Answer Form */
+.view-form {
+	display: flex;
+	#question-div {
+		display: flex;
+		justify-content: space-between;
+		width: 70%;
+	}
+}
+
+/* BarChart */
+
+#BarChart {
+	margin: 30px 0 60px 0;
+	padding: 0 5%;
+	width: 100%;
+}
+
+
+/* score-heading */
+.score-heading {
+	display: flex;
+	font-size: 36px;
+	font-weight: bold;
+	justify-content: center;
+	margin-top: 20px;
+	width: 100%;
+}
+.scores {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	span {
+		font-size: 24px;
+		margin: 0 10px;
+	}
+	padding-bottom: 20px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+	aside {
+		left: -33%;
+		position: absolute;
+		transition: left 2s ease;
+		z-index: 3;
+		&:hover {
+			left: 0;
+		}
+	}
+	.main {
+		.left-container {
+			width: 40%;
+		}
+		.right-container {
+			padding-left: 40px;
+			width: 95%;
+		}
+		.form-area {
+			margin: 60px 30px;
+			width: 90%;
+		}
+	}
+	.div-title {
+		margin: 20px 0 0 30px;
+		width: 50%;
+	}
+	#table-component {
+		padding: 0;
+	}
+	.drop-down-element {
+		padding-left: 40px;
+	}
+	.view-profile {
+		margin: 30px 0 30px 10px;
+		width: 96%;
+		.profile-info {
+			display: flex;
+			font-size: 16px;
+			justify-content: space-between;
+			margin-top: 20px;
+			padding: 20px 5%;
+		}
+	}
+	.test-view {
+		padding: 30px 0 0 50px;
+	}
+	.pre-scrollable {
+		margin-right: 0%;
+	}
+	.view-form {
+		display: block;
+	}
+	.react-countdown-clock {
+		margin-left: 40px;
+	}
+}
+
